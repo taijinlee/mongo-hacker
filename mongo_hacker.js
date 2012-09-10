@@ -318,7 +318,7 @@ prompt = function() {
     var host = serverstatus.host;
     var process = serverstatus.process;
     var version = db.serverBuildInfo().version;
-    return host + "(" + process + "-" + version + ")>";
+    return host + "(" + process + "-" + version + ")> ";
 }
 
 DBQuery.prototype.shellPrint = function(){
