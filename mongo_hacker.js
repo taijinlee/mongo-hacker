@@ -327,7 +327,7 @@ prompt = function() {
     var host = serverstatus.host.split('.')[0];
     var process = serverstatus.process;
     var version = db.serverBuildInfo().version;
-    return host + '(' + process + '-' + version + ')> ';
+    return host + '(' + process + '-' + version + ') ' + db + '> ';
 }
 
 DBQuery.prototype.shellPrint = function(){
